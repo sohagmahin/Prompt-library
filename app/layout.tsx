@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
@@ -18,6 +19,16 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <head>
+        {/* Your other meta tags */}
+        <Script
+          id="ZwSg9rf6GA"
+          data-host="https://gorillaget.com"
+          data-dnt="false"
+          src="https://gorillaget.pages.dev/script.js"
+          strategy="afterInteractive"
+        />
+      </head>
       <body className={inter.className}>
         <ThemeProvider
           attribute="class"

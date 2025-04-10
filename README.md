@@ -1,36 +1,117 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# AI Prompt Library
 
-## Getting Started
+A powerful AI prompt management and organization tool that helps you discover, create, and use pre-made prompts for ChatGPT and other AI models. Streamline your AI interactions with a curated library of high-quality prompts.
 
-First, run the development server:
+## 🎯 What is Prompt Filler?
+
+AI Prompt Library is a modern web application that helps you:
+
+- **Discover** pre-made prompts for various AI models
+- **Create** and **manage** your own prompts
+- **Organize** prompts by categories and tags
+- **Bookmark** your favorite prompts for quick access
+- **Search** through a growing library of prompts
+- **Send** prompts directly to AI models
+
+## 🌟 Key Features
+
+### 📚 Prompt Library
+
+- Browse prompts across multiple categories:
+  - Productivity & Business
+  - Marketing & Social Media
+  - Coding & Development
+  - Education & Research
+  - Creative Writing
+  - Personal Development
+  - Daily Life
+
+### 🔍 Smart Search
+
+- Search prompts by title, description, or tags
+- Filter by categories
+- Sort by popularity, date, or title
+
+### 📝 Prompt Management
+
+- Create new prompts with customizable placeholders
+- Edit existing prompts
+- Delete prompts you no longer need
+- Bookmark your favorite prompts
+- Track prompt popularity
+
+### 🚀 Quick Actions
+
+- Send prompts directly to AI models
+- Copy prompts to clipboard
+- Share prompts with others
+- Dark mode support for comfortable usage
+
+## 🛠️ Getting Started
+
+1. **Installation**
+
+```bash
+git clone https://github.com/sohagmahin/Prompt-library.git
+cd Prompt-library
+npm install
+```
+
+2. **Start Development Server**
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+3. **Open in Browser**
+   Visit [http://localhost:3000](http://localhost:3000)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 📱 Using AI Prompt Library
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Creating a Prompt
 
-## Learn More
+1. Click the "New Prompt" button
+2. Fill in the prompt details:
+   - Title
+   - Description
+   - Content
+   - Category
+   - Tags
+   - Placeholders (optional)
+3. Save your prompt
 
-To learn more about Next.js, take a look at the following resources:
+### Using a Prompt
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. Find a prompt using search or categories
+2. Click "Send to AI" to use it with your preferred AI model
+3. Fill in any placeholders if required
+4. The prompt will be sent to the AI model
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Managing Prompts
 
-## Deploy on Vercel
+- Bookmark prompts for quick access
+- Edit prompts to improve them
+- Delete prompts you no longer need
+- Clear all bookmarks at once
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🧰 Tech Stack
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Frontend
+
+- **Next.js 15.3** – Framework for SSR and routing
+- **Tailwind CSS** – Utility-first CSS styling
+- **shadcn/ui** – Beautifully designed components built on top of Radix UI
+- **Lucide React** – Icon set
+- **tw-animate-css** – Animation support
+
+## 🤝 Contributing
+
+We welcome contributions to the prompt library! To contribute:
+
+1. Fork the repository
+2. Create a new prompt
+3. Submit a pull request
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.

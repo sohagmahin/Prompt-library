@@ -14,7 +14,6 @@ export interface Prompt {
   content: string;
   category: PromptCategory;
   tags: string[];
-  author: string;
   createdAt: Date;
   updatedAt: Date;
   popularity: number;

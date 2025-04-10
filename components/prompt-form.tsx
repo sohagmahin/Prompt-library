@@ -22,8 +22,6 @@ export function PromptForm({ onSubmit, initialPrompt }: PromptFormProps) {
     content: initialPrompt?.content || "",
     category: initialPrompt?.category || "productivity-business",
     tags: initialPrompt?.tags.join(", ") || "",
-    author: initialPrompt?.author || "",
-    placeholders: initialPrompt?.placeholders || [],
   });
 
   const handleSubmit = (e: React.FormEvent) => {
@@ -49,8 +47,6 @@ export function PromptForm({ onSubmit, initialPrompt }: PromptFormProps) {
         content: "",
         category: "productivity-business",
         tags: "",
-        author: "",
-        placeholders: [],
       });
     }
   };
@@ -135,17 +131,6 @@ export function PromptForm({ onSubmit, initialPrompt }: PromptFormProps) {
           value={formData.tags}
           onChange={handleInputChange}
           placeholder="Enter tags separated by commas"
-        />
-      </div>
-
-      <div className="space-y-2">
-        <Label htmlFor="author">Author</Label>
-        <Input
-          id="author"
-          name="author"
-          value={formData.author}
-          onChange={handleInputChange}
-          placeholder="Enter author name"
         />
       </div>
 

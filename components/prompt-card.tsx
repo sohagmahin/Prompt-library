@@ -10,7 +10,7 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Copy, Eye, Pencil, Bookmark } from "lucide-react";
+import { Copy, Eye, Pencil, Bookmark, Trash2 } from "lucide-react";
 import { useState } from "react";
 import { toast } from "sonner";
 import { PromptViewer } from "./prompt-viewer";
@@ -19,6 +19,7 @@ interface PromptCardProps {
   prompt: Prompt;
   onSendToAI?: (prompt: string) => void;
   onEdit?: (prompt: Prompt) => void;
+  onDelete?: (promptId: string) => void;
   onBookmark?: (promptId: string) => void;
   isBookmarked?: boolean;
 }
@@ -27,6 +28,7 @@ export function PromptCard({
   prompt,
   onSendToAI,
   onEdit,
+  onDelete,
   onBookmark,
   isBookmarked = false,
 }: PromptCardProps) {
@@ -46,6 +48,12 @@ export function PromptCard({
   const handleBookmark = () => {
     if (onBookmark) {
       onBookmark(prompt.id);
+    }
+  };
+
+  const handleDelete = () => {
+    if (onDelete) {
+      onDelete(prompt.id);
     }
   };
 
@@ -75,6 +83,16 @@ export function PromptCard({
                 onClick={() => onEdit(prompt)}
               >
                 <Pencil className="h-4 w-4" />
+              </Button>
+            )}
+            {onDelete && (
+              <Button
+                variant="ghost"
+                size="icon"
+                onClick={handleDelete}
+                className="text-destructive hover:text-destructive"
+              >
+                <Trash2 className="h-4 w-4" />
               </Button>
             )}
           </div>

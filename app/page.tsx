@@ -118,6 +118,12 @@ export default function Home() {
     setPromptToEdit(null);
   };
 
+  const handleDeletePrompt = (promptId: string) => {
+    setPrompts((prev) => prev.filter((p) => p.id !== promptId));
+    setBookmarks((prev) => prev.filter((id) => id !== promptId));
+    toast.success("Prompt deleted successfully");
+  };
+
   const handleClearBookmarks = () => {
     setBookmarks([]);
     toast.success("All bookmarks cleared");
@@ -170,6 +176,7 @@ export default function Home() {
               prompts={bookmarkedPrompts}
               onSendToAI={handleSendToAI}
               onEdit={handleEditPrompt}
+              onDelete={handleDeletePrompt}
               onBookmark={handleBookmark}
               bookmarks={bookmarks}
             />
@@ -182,6 +189,7 @@ export default function Home() {
             prompts={filteredPrompts}
             onSendToAI={handleSendToAI}
             onEdit={handleEditPrompt}
+            onDelete={handleDeletePrompt}
             onBookmark={handleBookmark}
             bookmarks={bookmarks}
           />

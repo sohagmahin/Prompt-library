@@ -8,6 +8,7 @@ interface PromptGridProps {
   prompts: Prompt[];
   onSendToAI?: (prompt: string) => void;
   onEdit?: (prompt: Prompt) => void;
+  onDelete?: (promptId: string) => void;
   onBookmark?: (promptId: string) => void;
   bookmarks?: string[];
 }
@@ -16,6 +17,7 @@ export function PromptGrid({
   prompts,
   onSendToAI,
   onEdit,
+  onDelete,
   onBookmark,
   bookmarks = [],
 }: PromptGridProps) {
@@ -45,6 +47,7 @@ export function PromptGrid({
           prompt={prompt}
           onSendToAI={onSendToAI}
           onEdit={onEdit}
+          onDelete={onDelete}
           onBookmark={handleBookmark}
           isBookmarked={bookmarkedPrompts.includes(prompt.id)}
         />

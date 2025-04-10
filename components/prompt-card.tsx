@@ -83,15 +83,11 @@ export function PromptCard({
       </CardHeader>
       <CardContent>
         <div className="space-y-2">
-          {prompt.placeholders?.map((placeholder) => (
-            <div
-              key={placeholder.name}
-              className="text-sm text-muted-foreground"
-            >
-              <span className="font-medium">[{placeholder.name}]</span>:{" "}
-              {placeholder.description}
-            </div>
-          ))}
+          <div key={prompt.id} className="text-sm text-muted-foreground">
+            {prompt.content.length > 250
+              ? `${prompt.content.slice(0, 250)}...`
+              : prompt.content}
+          </div>
         </div>
       </CardContent>
       <CardFooter>

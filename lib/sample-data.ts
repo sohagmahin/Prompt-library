@@ -14,13 +14,6 @@ export const samplePrompts: Prompt[] = [
     createdAt: new Date("2024-01-01"),
     updatedAt: new Date("2024-01-01"),
     popularity: 100,
-    placeholders: [
-      {
-        name: "task",
-        description: "The main task to break down",
-        defaultValue: "Launch a new product",
-      },
-    ],
   },
   {
     id: "2",
@@ -34,28 +27,6 @@ export const samplePrompts: Prompt[] = [
     createdAt: new Date("2024-01-02"),
     updatedAt: new Date("2024-01-02"),
     popularity: 95,
-    placeholders: [
-      {
-        name: "meeting_type",
-        description: "Type of meeting",
-        defaultValue: "team sync",
-      },
-      {
-        name: "duration",
-        description: "Meeting duration",
-        defaultValue: "1 hour",
-      },
-      {
-        name: "topic",
-        description: "Main discussion topic",
-        defaultValue: "Q2 project planning",
-      },
-      {
-        name: "participants",
-        description: "Meeting participants",
-        defaultValue: "Product team, Engineering team",
-      },
-    ],
   },
   {
     id: "3",
@@ -69,13 +40,6 @@ export const samplePrompts: Prompt[] = [
     createdAt: new Date("2024-01-03"),
     updatedAt: new Date("2024-01-03"),
     popularity: 90,
-    placeholders: [
-      {
-        name: "project_name",
-        description: "Name of the project",
-        defaultValue: "Website Redesign",
-      },
-    ],
   },
 
   // Marketing & Social Media
@@ -91,23 +55,6 @@ export const samplePrompts: Prompt[] = [
     createdAt: new Date("2024-01-04"),
     updatedAt: new Date("2024-01-04"),
     popularity: 85,
-    placeholders: [
-      {
-        name: "platform",
-        description: "Social media platform",
-        defaultValue: "Twitter",
-      },
-      {
-        name: "topic",
-        description: "Post topic",
-        defaultValue: "AI technology",
-      },
-      {
-        name: "tone",
-        description: "Tone of the post",
-        defaultValue: "professional",
-      },
-    ],
   },
   {
     id: "5",
@@ -121,23 +68,6 @@ export const samplePrompts: Prompt[] = [
     createdAt: new Date("2024-01-05"),
     updatedAt: new Date("2024-01-05"),
     popularity: 80,
-    placeholders: [
-      {
-        name: "type",
-        description: "Type of campaign",
-        defaultValue: "welcome series",
-      },
-      {
-        name: "product/service",
-        description: "Product or service being marketed",
-        defaultValue: "new SaaS product",
-      },
-      {
-        name: "audience",
-        description: "Target audience",
-        defaultValue: "small business owners",
-      },
-    ],
   },
   {
     id: "6",
@@ -151,18 +81,6 @@ export const samplePrompts: Prompt[] = [
     createdAt: new Date("2024-01-06"),
     updatedAt: new Date("2024-01-06"),
     popularity: 75,
-    placeholders: [
-      {
-        name: "topic",
-        description: "Content topic",
-        defaultValue: "digital marketing strategies",
-      },
-      {
-        name: "keyword",
-        description: "Target keyword",
-        defaultValue: "content marketing tips",
-      },
-    ],
   },
 
   // Coding & Development
@@ -178,18 +96,6 @@ export const samplePrompts: Prompt[] = [
     createdAt: new Date("2024-01-07"),
     updatedAt: new Date("2024-01-07"),
     popularity: 95,
-    placeholders: [
-      {
-        name: "language",
-        description: "Programming language",
-        defaultValue: "TypeScript",
-      },
-      {
-        name: "code",
-        description: "Code to review",
-        defaultValue: "// Your code here",
-      },
-    ],
   },
   {
     id: "8",
@@ -203,18 +109,6 @@ export const samplePrompts: Prompt[] = [
     createdAt: new Date("2024-01-08"),
     updatedAt: new Date("2024-01-08"),
     popularity: 90,
-    placeholders: [
-      {
-        name: "api_name",
-        description: "Name of the API",
-        defaultValue: "User Management API",
-      },
-      {
-        name: "language",
-        description: "Programming language for examples",
-        defaultValue: "JavaScript",
-      },
-    ],
   },
   {
     id: "9",
@@ -228,18 +122,6 @@ export const samplePrompts: Prompt[] = [
     createdAt: new Date("2024-01-09"),
     updatedAt: new Date("2024-01-09"),
     popularity: 85,
-    placeholders: [
-      {
-        name: "database",
-        description: "Database type",
-        defaultValue: "PostgreSQL",
-      },
-      {
-        name: "query",
-        description: "SQL query to optimize",
-        defaultValue: "SELECT * FROM users WHERE status = 'active'",
-      },
-    ],
   },
 
   // Education & Research
@@ -255,13 +137,6 @@ export const samplePrompts: Prompt[] = [
     createdAt: new Date("2024-01-10"),
     updatedAt: new Date("2024-01-10"),
     popularity: 80,
-    placeholders: [
-      {
-        name: "topic",
-        description: "Research topic",
-        defaultValue: "impact of AI on education",
-      },
-    ],
   },
   {
     id: "11",
@@ -275,18 +150,6 @@ export const samplePrompts: Prompt[] = [
     createdAt: new Date("2024-01-11"),
     updatedAt: new Date("2024-01-11"),
     popularity: 75,
-    placeholders: [
-      {
-        name: "subject",
-        description: "Subject to study",
-        defaultValue: "Calculus",
-      },
-      {
-        name: "topics",
-        description: "Topics to cover",
-        defaultValue: "derivatives, integrals, limits",
-      },
-    ],
   },
   {
     id: "12",
@@ -300,18 +163,6 @@ export const samplePrompts: Prompt[] = [
     createdAt: new Date("2024-01-12"),
     updatedAt: new Date("2024-01-12"),
     popularity: 70,
-    placeholders: [
-      {
-        name: "topic",
-        description: "Research topic",
-        defaultValue: "machine learning in healthcare",
-      },
-      {
-        name: "aspect",
-        description: "Specific aspect to focus on",
-        defaultValue: "diagnostic applications",
-      },
-    ],
   },
 
   // Creative Writing
@@ -327,13 +178,6 @@ export const samplePrompts: Prompt[] = [
     createdAt: new Date("2024-01-13"),
     updatedAt: new Date("2024-01-13"),
     popularity: 85,
-    placeholders: [
-      {
-        name: "character_name",
-        description: "Character's name",
-        defaultValue: "Sarah Johnson",
-      },
-    ],
   },
   {
     id: "14",
@@ -347,13 +191,6 @@ export const samplePrompts: Prompt[] = [
     createdAt: new Date("2024-01-14"),
     updatedAt: new Date("2024-01-14"),
     popularity: 80,
-    placeholders: [
-      {
-        name: "genre",
-        description: "Story genre",
-        defaultValue: "science fiction",
-      },
-    ],
   },
   {
     id: "15",
@@ -367,23 +204,6 @@ export const samplePrompts: Prompt[] = [
     createdAt: new Date("2024-01-15"),
     updatedAt: new Date("2024-01-15"),
     popularity: 75,
-    placeholders: [
-      {
-        name: "character1",
-        description: "First character",
-        defaultValue: "detective",
-      },
-      {
-        name: "character2",
-        description: "Second character",
-        defaultValue: "suspect",
-      },
-      {
-        name: "topic",
-        description: "Dialogue topic",
-        defaultValue: "the missing evidence",
-      },
-    ],
   },
 
   // Personal Development
@@ -399,13 +219,6 @@ export const samplePrompts: Prompt[] = [
     createdAt: new Date("2024-01-16"),
     updatedAt: new Date("2024-01-16"),
     popularity: 90,
-    placeholders: [
-      {
-        name: "goal",
-        description: "Personal goal",
-        defaultValue: "learning a new language",
-      },
-    ],
   },
   {
     id: "17",
@@ -419,13 +232,6 @@ export const samplePrompts: Prompt[] = [
     createdAt: new Date("2024-01-17"),
     updatedAt: new Date("2024-01-17"),
     popularity: 85,
-    placeholders: [
-      {
-        name: "habit",
-        description: "Habit to develop",
-        defaultValue: "daily meditation",
-      },
-    ],
   },
   {
     id: "18",
@@ -439,13 +245,6 @@ export const samplePrompts: Prompt[] = [
     createdAt: new Date("2024-01-18"),
     updatedAt: new Date("2024-01-18"),
     popularity: 80,
-    placeholders: [
-      {
-        name: "context",
-        description: "Time management context",
-        defaultValue: "remote work",
-      },
-    ],
   },
 
   // Daily Life
@@ -461,23 +260,6 @@ export const samplePrompts: Prompt[] = [
     createdAt: new Date("2024-01-19"),
     updatedAt: new Date("2024-01-19"),
     popularity: 85,
-    placeholders: [
-      {
-        name: "duration",
-        description: "Meal plan duration",
-        defaultValue: "weekly",
-      },
-      {
-        name: "diet_type",
-        description: "Type of diet",
-        defaultValue: "vegetarian",
-      },
-      {
-        name: "dietary_restrictions",
-        description: "Dietary restrictions",
-        defaultValue: "no nuts, gluten-free",
-      },
-    ],
   },
   {
     id: "20",
@@ -491,18 +273,6 @@ export const samplePrompts: Prompt[] = [
     createdAt: new Date("2024-01-20"),
     updatedAt: new Date("2024-01-20"),
     popularity: 80,
-    placeholders: [
-      {
-        name: "duration",
-        description: "Trip duration",
-        defaultValue: "7 days",
-      },
-      {
-        name: "destination",
-        description: "Travel destination",
-        defaultValue: "Tokyo, Japan",
-      },
-    ],
   },
   {
     id: "21",
@@ -516,13 +286,6 @@ export const samplePrompts: Prompt[] = [
     createdAt: new Date("2024-01-21"),
     updatedAt: new Date("2024-01-21"),
     popularity: 75,
-    placeholders: [
-      {
-        name: "space",
-        description: "Space to organize",
-        defaultValue: "home office",
-      },
-    ],
   },
 ];
 

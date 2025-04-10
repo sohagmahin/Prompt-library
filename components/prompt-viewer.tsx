@@ -37,8 +37,6 @@ export function PromptViewer({
 }: PromptViewerProps) {
   const placeholders = extractPlaceholders(prompt.content);
 
-  console.log(placeholders);
-
   const [values, setValues] = useState<Record<string, string>>(
     placeholders.reduce(
       (acc, placeholder) => ({

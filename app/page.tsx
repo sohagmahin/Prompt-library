@@ -86,7 +86,12 @@ export default function Home() {
   };
 
   const handleAISubmit = () => {
-    console.log("Sending to AI:", currentPrompt);
+    const gptUrl = `https://chat.openai.com/?q=${encodeURIComponent(
+      currentPrompt
+    )}`;
+    window.open(gptUrl, "_blank");
+
+    toast.success("Prompt sent to Claude!");
     setIsAIDialogOpen(false);
   };
 
@@ -214,7 +219,7 @@ export default function Home() {
               >
                 Cancel
               </Button>
-              <Button onClick={handleAISubmit}>Send to AI</Button>
+              <Button onClick={handleAISubmit}>Ask GPT</Button>
             </div>
           </div>
         </DialogContent>

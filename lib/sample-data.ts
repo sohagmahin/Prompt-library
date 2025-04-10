@@ -84,6 +84,7 @@ export const samplePrompts: Prompt[] = [
   },
 
   // Coding & Development
+
   {
     id: "7",
     title: "Code Review Assistant",
@@ -99,6 +100,21 @@ export const samplePrompts: Prompt[] = [
   },
   {
     id: "8",
+    title: "Software Engineer Cover Letter",
+    description:
+      "Generate a tailored cover letter for software engineering roles",
+    content:
+      "Compose a professional and engaging cover letter for a [position_type] role. The candidate has experience as a [experience_level] specializing in [specialization]. Highlight relevant skills, projects, and achievements from their CV. Ensure the tone is confident yet concise, and tailored to the job requirements and company culture. Include:\n\n1. An engaging opening statement\n2. Key technical skills and frameworks\n3. Notable projects or contributions\n4. Soft skills and teamwork experiences\n5. A closing paragraph emphasizing enthusiasm and availability for an interview.",
+    category: "coding-development",
+    tags: ["cover-letter", "career", "software-engineering"],
+    author: "System",
+    createdAt: new Date("2024-04-11"),
+    updatedAt: new Date("2024-04-11"),
+    popularity: 85,
+  },
+
+  {
+    id: "9",
     title: "API Documentation",
     description: "Generate comprehensive API documentation",
     content:
@@ -111,7 +127,7 @@ export const samplePrompts: Prompt[] = [
     popularity: 90,
   },
   {
-    id: "9",
+    id: "10",
     title: "Database Query Optimizer",
     description: "Optimize database queries for better performance",
     content:
@@ -126,7 +142,7 @@ export const samplePrompts: Prompt[] = [
 
   // Education & Research
   {
-    id: "10",
+    id: "11",
     title: "Research Paper Outline",
     description: "Create a structured research paper outline",
     content:
@@ -139,7 +155,7 @@ export const samplePrompts: Prompt[] = [
     popularity: 80,
   },
   {
-    id: "11",
+    id: "12",
     title: "Study Guide Generator",
     description: "Create a comprehensive study guide",
     content:
@@ -152,7 +168,7 @@ export const samplePrompts: Prompt[] = [
     popularity: 75,
   },
   {
-    id: "12",
+    id: "13",
     title: "Literature Review",
     description: "Generate a comprehensive literature review",
     content:
@@ -167,7 +183,7 @@ export const samplePrompts: Prompt[] = [
 
   // Creative Writing
   {
-    id: "13",
+    id: "14",
     title: "Character Development",
     description: "Create detailed character profiles",
     content:
@@ -180,7 +196,7 @@ export const samplePrompts: Prompt[] = [
     popularity: 85,
   },
   {
-    id: "14",
+    id: "15",
     title: "Plot Structure",
     description: "Outline a compelling story plot",
     content:
@@ -193,7 +209,7 @@ export const samplePrompts: Prompt[] = [
     popularity: 80,
   },
   {
-    id: "15",
+    id: "16",
     title: "Dialogue Generator",
     description: "Create natural and engaging dialogue",
     content:
@@ -208,7 +224,7 @@ export const samplePrompts: Prompt[] = [
 
   // Personal Development
   {
-    id: "16",
+    id: "17",
     title: "Goal Setting Framework",
     description: "Create a structured goal-setting plan",
     content:
@@ -221,7 +237,7 @@ export const samplePrompts: Prompt[] = [
     popularity: 90,
   },
   {
-    id: "17",
+    id: "18",
     title: "Habit Formation",
     description: "Create a habit formation plan",
     content:
@@ -234,7 +250,7 @@ export const samplePrompts: Prompt[] = [
     popularity: 85,
   },
   {
-    id: "18",
+    id: "19",
     title: "Time Management",
     description: "Create an effective time management system",
     content:
@@ -249,7 +265,7 @@ export const samplePrompts: Prompt[] = [
 
   // Daily Life
   {
-    id: "19",
+    id: "20",
     title: "Meal Planning",
     description: "Create a healthy meal plan",
     content:
@@ -262,7 +278,7 @@ export const samplePrompts: Prompt[] = [
     popularity: 85,
   },
   {
-    id: "20",
+    id: "21",
     title: "Travel Itinerary",
     description: "Create a detailed travel itinerary",
     content:
@@ -275,7 +291,7 @@ export const samplePrompts: Prompt[] = [
     popularity: 80,
   },
   {
-    id: "21",
+    id: "22",
     title: "Home Organization",
     description: "Create a home organization plan",
     content:

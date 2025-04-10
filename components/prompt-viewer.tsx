@@ -59,7 +59,7 @@ export function PromptViewer({
     try {
       await navigator.clipboard.writeText(getCustomizedPrompt());
       toast.success("Prompt copied to clipboard!");
-    } catch (err) {
+    } catch {
       toast.error("Failed to copy prompt");
     }
   };

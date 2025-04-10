@@ -15,6 +15,15 @@ import { Copy, Send } from "lucide-react";
 import { useState } from "react";
 import { toast } from "sonner";
 
+const extractPlaceholders = (content: string) => {
+  const regex = /\[([^\]]+)\]/g;
+  const matches = [...content.matchAll(regex)];
+  return matches.map((match) => ({
+    name: match[1],
+    description: `Enter ${match[1]}`,
+  }));
+};
+
 interface PromptViewerProps {
   prompt: Prompt;
   trigger: React.ReactNode;
@@ -26,14 +35,18 @@ export function PromptViewer({
   trigger,
   onSendToAI,
 }: PromptViewerProps) {
+  const placeholders = extractPlaceholders(prompt.content);
+
+  console.log(placeholders);
+
   const [values, setValues] = useState<Record<string, string>>(
-    prompt.placeholders?.reduce(
+    placeholders.reduce(
       (acc, placeholder) => ({
         ...acc,
-        [placeholder.name]: placeholder.defaultValue || "",
+        [placeholder.name]: "",
       }),
       {}
-    ) || {}
+    )
   );
 
   const getCustomizedPrompt = () => {
@@ -71,7 +84,7 @@ export function PromptViewer({
             <p className="text-sm text-muted-foreground mb-4">
               {prompt.description}
             </p>
-            {prompt.placeholders?.map((placeholder) => (
+            {placeholders.map((placeholder) => (
               <div key={placeholder.name} className="space-y-2 mb-4">
                 <Label htmlFor={placeholder.name}>
                   {placeholder.description}

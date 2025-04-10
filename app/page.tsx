@@ -4,7 +4,6 @@ import { Prompt, PromptCategory } from "@/lib/types";
 import { PromptGrid } from "@/components/prompt-grid";
 import { SearchBar } from "@/components/search-bar";
 import { PromptDialog } from "@/components/prompt-dialog";
-import { samplePrompts } from "@/lib/sample-data";
 import { Toaster } from "sonner";
 import { useState, useMemo } from "react";
 import {
@@ -17,6 +16,7 @@ import { Button } from "@/components/ui/button";
 import { PromptForm } from "@/components/prompt-form";
 import { Bookmark, Trash2 } from "lucide-react";
 import { useLocalStorage } from "@/lib/hooks/use-local-storage";
+import { usePrompts } from "@/lib/hooks/use-prompts";
 import { toast } from "sonner";
 
 export default function Home() {
@@ -28,7 +28,7 @@ export default function Home() {
     "prompt-bookmarks",
     []
   );
-  const [prompts, setPrompts] = useState<Prompt[]>(samplePrompts);
+  const [prompts, setPrompts] = usePrompts();
   const [isAIDialogOpen, setIsAIDialogOpen] = useState(false);
   const [currentPrompt, setCurrentPrompt] = useState<string>("");
   const [isEditDialogOpen, setIsEditDialogOpen] = useState(false);

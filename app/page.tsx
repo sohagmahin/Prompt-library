@@ -18,6 +18,7 @@ import { Bookmark, Trash2 } from "lucide-react";
 import { useLocalStorage } from "@/lib/hooks/use-local-storage";
 import { usePrompts } from "@/lib/hooks/use-prompts";
 import { toast } from "sonner";
+import { ThemeToggle } from "@/components/theme-toggle";
 
 export default function Home() {
   const [searchQuery, setSearchQuery] = useState("");
@@ -139,7 +140,10 @@ export default function Home() {
               Discover and use pre-made prompts for ChatGPT and other AI models
             </p>
           </div>
-          <PromptDialog onSubmit={handleCreatePrompt} />
+          <div className="flex items-center gap-4">
+            <ThemeToggle />
+            <PromptDialog onSubmit={handleCreatePrompt} />
+          </div>
         </div>
 
         <div className="mb-8">
